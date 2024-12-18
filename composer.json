@@ -1,0 +1,22 @@
+{
+    "name": "maluramichael/nukular",
+    "version": "1.0.0",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "Nukular\\": "Nukular/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nukular\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "create-docs": "docker run --rm -v \"$(pwd):/data\" \"phpdoc/phpdoc:3\" --target docs --directory Nukular"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@dev",
+        "saggre/phpdocumentor-markdown": "^0.1.4"
+    }
+}
